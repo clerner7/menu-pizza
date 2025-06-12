@@ -74,14 +74,30 @@
       font-size: 0.9rem;
       position: relative;
       padding-bottom: 50px;
+      font-weight: bold;
+      color: #900;
     }
 
     footer img.footer-image {
-      position: absolute;
+      position: center;
       bottom: 0;
-      left: 660;
-      width: 70px;
-      opacity: 0.8;
+      left: center;
+      width: 40px;
+      opacity: 1;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      padding: 0 1rem;
+    }
+
+    .map-container iframe {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -90,18 +106,14 @@
   <div class="menu-container">
     <header>
       <img src="logo.png" alt="Pizza Brand Logo" class="logo" />
-      <!-- <h1>פיצה פינקו</h1> -->
-      <!-- <h2>אפייה בטאבון</h2> -->
       <h2>טל להזמנות:02-5830148</h2>
     </header>
 
     <body>
       <div class="menu-container">
-        <h3>פיצות</h3>
+        <h3>פיצות שף בטאבון</h3>
         <div class="item"><span>פיצה קלאסית בטאבון — רוטב עגבניות ומוצרלה</span><span class="price">69 ₪</span></div>
         <div class="item"><span>פיצה נאפולי — רוטב פסו עגבניות ומוצרלה</span><span class="price">110 ₪</span></div>
-        <div class="item"><span>פיצה פסו — רוטב פסו, פרי עגבניות, מוצרלה, בולגרית, זיתים שחורים, ושום
-            קונפי</span><span class="price">110 ₪</span></div>
         <div class="item"><span>פיצה מרגריטה — רוטב אלפרדו, מוצרלה, בולגרית, זיתים שחורים, ושום קונפי</span><span
             class="price">110 ₪</span></div>
         <div class="item"><span>פיצה יוונית — רוטב עגבניות, גבינה בולגרית, עגבניות שרי, בצל סגול, זיתים
@@ -149,20 +161,24 @@
         <div class="item"><span>בקבוק רגיל</span><span class="price">12 ₪</span></div>
 
         <footer>
-          כשר מהדרין · בן הלל 5 ירושלים · טל להזמנות: 02-5830148
-          <img src="footer-img.png" alt="Footer Decoration" class="footer-image" />
-          <div style="margin-top: 1rem;">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.449420490787!2d35.2172937!3d31.7820436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150329a27d85b5b3%3A0x8545193d8b95b7c5!2zUGl6emEgUGludG8gLSBCcmljayBPdmVuINeV15nXqNeZINeVINeh15HXmQ!5e0!3m2!1siw!2sil!4v1718217523123!5m2!1siw!2sil"
-              width="60%" height="200" style="border:1; border-radius: 80px; margin-top: 1rem;" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+          <p>כשר מהדרין · בן הלל 5 ירושלים
+          </p>
+          <p>טל להזמנות: 02-5830148
+
+          </p>
+          <div class="map-container">
+            <div style="margin-top: 1rem;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.449420490787!2d35.2172937!3d31.7820436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150329a27d85b5b3%3A0x8545193d8b95b7c5!2zUGl6emEgUGludG8gLSBCcmljayBPdmVuINeV15nXqNeZINeVINeh15HXmQ!5e0!3m2!1siw!2sil!4v1718217523123!5m2!1siw!2sil"
+                width="75%" height="200" style="border:1; border-radius: 20px; margin-top: 1rem;" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div> <br> <img src="footer-img.png" alt="Footer Decoration" class="footer-image" />
+        </footer>
+
       </div>
 
-      </footer>
-  </div>
-
-</body>
+    </body>
 
 </html>
